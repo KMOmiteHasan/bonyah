@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+}
+
+body {
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: 'DM Sans', sans-serif;
+    background: #D7C198;
+    position: relative;
+    min-height: 100vh;
+}
+
+.main-header {
+    width: 100%;
+    background: transparent;
+    padding: 7.5rem 0 5.5rem;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    background: #70815E;
+}
+
+.main-logo {
+    position: absolute;
+    left: 5.73vw;
+    top: 0;
+    width: 24.5rem;
+    background: #D7C198;
+    -webkit-transform: translateY(-40%);
+    -moz-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    -o-transform: translateY(-40%);
+    transform: translateY(-40%);
+}
+
+.main-logo a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main-logo img {
+    width: 95%;
+    object-fit: cover;
+}
+
+.main-menu-block {
+    width: 80%;
+    background: transparent;
+}
+
+.main-menu-block .main-menu {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main-menu-block .main-menu .menu-link {
+    color: #FFF;
+    font-size: 2.65rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.3rem;
+    text-decoration: none;
+    margin: 0 3.646vw;
+}
+
+.main-menu-block .main-menu .menu-link.menu-link-active {
+    text-decoration: underline;
+}
+
+.main-menu-block .main-menu .menu-link:hover {
+    text-decoration: underline;
+}
+
+.main-menu-block .main-menu .menu-link#languageMenu {
+    margin-right: 2.0833vw;
+}
+
+.main-menu-block .main-menu .menu-link#languageMenu:hover {
+    text-decoration: none;
+}
+
+.menu-link#languageMenu #languageMenuEng {
+    text-decoration: underline;
+}
+
+.hamburger-close {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+    width: 4rem;
+    height: 4rem;
+}
+
+.hamburger-menu svg {
+    width: 4rem;
+    height: 4rem;
+    fill: #ffffff;
+}
+
+.hero-section {
+    width: 100%;
+    padding: 9.5rem 7.8125vw 0 4.42709vw;
+    background: transparent;
+}
+
+.hero-section-container {
+    width: 100%;
+}
+
+.hero-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content-card-1 {
+    width: 30.833vw;
+    padding: 0 2.0833vw;
+    margin-right: 2.604vw;
+}
+
+.hero-content-card-1 h1 {
+    color: #70815E;
+    font-size: 6.525rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 6.525rem;
+    margin-bottom: 1.6rem;
+}
+
+.hero-content-card-1 p {
+    color: #094123;
+    font-size: 1.632rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.45rem;
+}
+
+.hero-content-card-2 {
+    width: 53.33vw;
+}
+
+.hero-content-card-2 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+@media (max-width:1660px) {
+    .main-menu-block .main-menu .menu-link {
+        font-size: 1.6vw;
+        /* line-height: 1.99vw; */
+        margin: 0 3.2vw;
+    }
+
+    .hero-content-card-1 h1 {
+        font-size: 3.9308vw;
+        line-height: 3.9308vw;
+    }
+}
+
+@media (max-width:1368px) {
+    .main-logo {
+        left: 5.73vw;
+        width: 17.91vw;
+    }
+
+    .hero-section {
+        width: 100%;
+        padding: 9.5rem 6vw 0 4.1vw;
+        background: transparent;
+    }
+
+    .hero-content-card-1 {
+        padding: 0 2.0833vw;
+        margin-right: 2vw;
+    }
+
+    .hero-content-card-2 {
+        width: 57vw;
+        height: 34rem;
+    }
+
+    .hero-content-card-2 img {
+        height: 100%;
+    }
+
+    .hero-content-card-1 p {
+        font-size: 1.2vw;
+        line-height: 1.8vw;
+    }
+
+    .hero-content-card-1 h1 {
+        font-size: 3.6vw;
+        line-height: 3.6vw;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width:990px) {
+    .hero-content-card-2 {
+        width: 57vw;
+        height: 32rem;
+    }
+
+    .hero-content-card-2 img {
+        height: 100%;
+    }
+
+    .hero-content-card-1 p {
+        font-size: 1.35vw;
+        line-height: 1.8vw;
+    }
+
+    .hero-content-card-1 h1 {
+        font-size: 3.75vw;
+        line-height: 3.75vw;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 8px;
+    }
+
+    .header-container {
+        min-height: 5rem;
+        padding-right: 5rem;
+    }
+
+    .main-logo {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 24.5rem;
+        background: #D7C198;
+        -webkit-transform: translate(-50%, -30%);
+        -moz-transform: translate(-50%, -30%);
+        -ms-transform: translate(-50%, -30%);
+        -o-transform: translate(-50%, -30%);
+        transform: translate(-50%, -30%);
+}
+
+    .main-menu-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+        width: 50%;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #70815E;
+        margin-right: -50%;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+}
+    .main-menu-block.show-menu {
+        margin-right: 0%;
+}
+
+    .hamburger-close {
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 2rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .hamburger-close svg {
+        width: 4rem;
+        height: 4rem;
+        fill: #ffffff;
+    }
+
+    .main-menu-block .main-menu {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-menu-block .main-menu .menu-link {
+        color: #FFF;
+        font-size: 2.65rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.3rem;
+        text-decoration: none;
+        margin: 1rem 1.5rem;
+        padding: 1.5rem 2rem;
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: block;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .hamburger-menu svg {
+        width: 4rem;
+        height: 4rem;
+        fill: #ffffff;
+    }
+
+    .hero-section {
+        padding: 5rem 5rem 0;
+    }
+
+    .hero-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content-card-1 {
+        width: 100%;
+        padding: 3rem 5rem 0;
+        margin: 0;
+        order: 2;
+    }
+
+    .hero-content-card-2 {
+        width: 100%;
+        height: auto;
+        order: 1;
+    }
+
+    .hero-content-card-1 h1 {
+        font-size: 5.5rem;
+        line-height: 5.5rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .hero-content-card-1 p {
+        font-size: 1.7rem;
+        line-height: 2.45rem;
+    }
+}
+
+@media (max-width:668px) {
+    html {
+        font-size: 7px;
+    }
+
+        .hero-content-card-1 {
+            padding: 3rem 4rem 0;
+        }
+
+        .hero-content-card-1 h1 {
+            font-size: 5rem;
+            line-height: 5rem;
+        }
+
+}
+
+@media (max-width:520px) {
+    html {
+        font-size: 6px;
+    }
+
+    .main-menu-block {
+        width: 65%;
+        margin-right: -65%;
+    }
+}
