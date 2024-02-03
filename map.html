@@ -23,6 +23,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="resources/images/logo.png">
 
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="vendors/css/map.css">
 
 </head>
@@ -123,8 +124,27 @@
         </div>
     </section>
 
+    <div class="highlight-construction-date-field mapContent-2-popup">
+        <div class="highlight-construction-date-field-container">
+            <h1>Select start and end date</h1>
+            <input type="text" id="startDate" placeholder="Start date">
+            <input type="text" id="endDate" placeholder="End date">
+            <button id="mapContent-2-popup-btn" type="submit">Submit</button>
+        </div>
+    </div>
+
+    <div class="traffic-information-date-field mapContent-3-popup">
+        <div class="traffic-information-date-field-container">
+            <h1>Select date and hour</h1>
+            <input type="text" id="trafficStartDate" placeholder="Start date">
+            <input type="text" id="trafficEndDate" placeholder="End date">
+            <button id="mapContent-3-popup-btn" type="submit">Submit</button>
+        </div>
+    </div>
 
 
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="vendors/js/script.js"></script>
 
 

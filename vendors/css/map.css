@@ -226,6 +226,121 @@ body {
     }
 }
 
+.highlight-construction-date-field,
+.traffic-information-date-field {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight-construction-date-field.mapContent2Popup-show,
+.traffic-information-date-field.mapContent3Popup-show {
+    display: flex;
+}
+
+
+.highlight-construction-date-field-container,
+.traffic-information-date-field-container {
+    width: 50vw;
+    padding: 7rem 4.3rem 10rem;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+    border-radius: 22px;
+    position: relative;
+}
+
+.highlight-construction-date-field-container h1,
+.traffic-information-date-field-container h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 4.7rem;
+    font-weight: 500;
+    color: #70815E;
+    line-height: normal;
+    margin-bottom: 6rem;
+}
+
+.highlight-construction-date-field-container #startDate,
+.highlight-construction-date-field-container #endDate,
+.traffic-information-date-field-container #trafficStartDate,
+.traffic-information-date-field-container #trafficEndDate {
+    padding: 3.5rem 5rem;
+    width: 100%;
+    font-size: 2.8rem;
+    color: #ffffff;
+    line-height: normal;
+    text-align: center;
+    background: #70815E;
+    border: 0;
+    outline: 0;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.highlight-construction-date-field-container #startDate::placeholder,
+.highlight-construction-date-field-container #endDate::placeholder,
+.traffic-information-date-field-container #trafficStartDate::placeholder,
+.traffic-information-date-field-container #trafficEndDate::placeholder {
+    color: #ffffff;
+}
+
+.highlight-construction-date-field-container .ui-datepicker-trigger,
+.traffic-information-date-field-container .ui-datepicker-trigger {
+    position: absolute;
+    right: 10rem;
+    transform: translateY(2rem);
+    -webkit-transform: translateY(2rem);
+    -moz-transform: translateY(2rem);
+    -ms-transform: translateY(2rem);
+    -o-transform: translateY(2rem);
+    width: 5rem;
+    height: 5rem;
+}
+
+#ui-datepicker-div {
+    width: 40vw;
+}
+
+.highlight-construction-date-field-container button,
+.traffic-information-date-field-container button {
+    font-size: 2.8rem;
+    color: #ffffff;
+    line-height: normal;
+    text-align: center;
+    padding: 1.1rem 7.7rem;
+    text-transform: uppercase;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border-radius: 12px;
+    border: 0;
+    outline: 0;
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    background: #70815E;
+    cursor: pointer;
+}
 
 
 
@@ -268,6 +383,14 @@ body {
     .mapContent {
         height: 60rem;
     }
+    .highlight-construction-date-field-container,
+    .traffic-information-date-field-container {
+        width: 55vw;
+    }
+
+    #ui-datepicker-div {
+        width: 45vw;
+    }
 }
 
 @media (max-width:990px) {
@@ -290,6 +413,15 @@ body {
 
     .mapContent {
         height: 53rem;
+    }
+
+    .highlight-construction-date-field-container,
+    .traffic-information-date-field-container {
+        width: 65vw;
+    }
+
+    #ui-datepicker-div {
+        width: 50vw;
     }
 }
 
@@ -418,6 +550,14 @@ body {
         width: 100%;
         margin: 0;
         padding: 0 2rem;
+    }
+    .highlight-construction-date-field-container,
+    .traffic-information-date-field-container {
+        width: 80vw;
+    }
+
+    #ui-datepicker-div {
+        width: 60vw;
     }
 }
 

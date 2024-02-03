@@ -41,3 +41,100 @@ function openLink(evt, animName) {
     document.getElementById(animName).style.display = "flex";
     evt.currentTarget.classList.add("tab-active");
 }
+
+$(function () {
+    $("#startDate").datepicker({
+        dateFormat: "mm/dd/yy",
+        showOn: "both",
+        buttonImage: "../../resources/images/chevron-up-s.png",
+        buttonImageOnly: true,
+        buttonText: "Select start date",
+        beforeShow: function (input, inst) {
+            $(input).prop("readonly", true);
+        },
+        onClose: function (input, inst) {
+            $(input).prop("readonly", false);
+        },
+        onSelect: function (dateText) {
+            console.log("Selected date: " + dateText);
+        }
+    });
+});
+
+$(function () {
+    $("#endDate").datepicker({
+        dateFormat: "mm/dd/yy",
+        showOn: "both",
+        buttonImage: "../../resources/images/chevron-up-s.png",
+        buttonImageOnly: true,
+        buttonText: "Select start date",
+        beforeShow: function (input, inst) {
+            $(input).prop("readonly", true);
+        },
+        onClose: function (input, inst) {
+            $(input).prop("readonly", false);
+        },
+        onSelect: function (dateText) {
+            console.log("Selected date: " + dateText);
+        }
+    });
+});
+
+$(function () {
+    $("#trafficStartDate").datepicker({
+        dateFormat: "mm/dd/yy",
+        showOn: "both",
+        buttonImage: "../../resources/images/chevron-up-s.png",
+        buttonImageOnly: true,
+        buttonText: "Select start date",
+        beforeShow: function (input, inst) {
+            $(input).prop("readonly", true);
+        },
+        onClose: function (input, inst) {
+            $(input).prop("readonly", false);
+        },
+        onSelect: function (dateText) {
+            console.log("Selected date: " + dateText);
+        }
+    });
+});
+
+$(function () {
+    $("#trafficEndDate").datepicker({
+        dateFormat: "mm/dd/yy",
+        showOn: "both",
+        buttonImage: "../../resources/images/chevron-up-s.png",
+        buttonImageOnly: true,
+        buttonText: "Select start date",
+        beforeShow: function (input, inst) {
+            $(input).prop("readonly", true);
+        },
+        onClose: function (input, inst) {
+            $(input).prop("readonly", false);
+        },
+        onSelect: function (dateText) {
+            console.log("Selected date: " + dateText);
+        }
+    });
+});
+
+
+let mapContent2Popup = document.querySelector(".mapContent-2-popup")
+
+document.getElementById("tabBtnLink2").addEventListener("click", ()=>{
+    mapContent2Popup.classList.toggle("mapContent2Popup-show")
+})
+
+document.getElementById("mapContent-2-popup-btn").addEventListener("click", ()=>{
+    mapContent2Popup.classList.toggle("mapContent2Popup-show")
+})
+
+let mapContent3Popup = document.querySelector(".mapContent-3-popup")
+
+document.getElementById("tabBtnLink3").addEventListener("click", ()=>{
+    mapContent3Popup.classList.toggle("mapContent3Popup-show")
+})
+
+document.getElementById("mapContent-3-popup-btn").addEventListener("click", ()=>{
+    mapContent3Popup.classList.toggle("mapContent3Popup-show")
+})
