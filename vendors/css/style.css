@@ -277,7 +277,7 @@ body {
         -ms-transform: translate(-50%, -30%);
         -o-transform: translate(-50%, -30%);
         transform: translate(-50%, -30%);
-}
+    }
 
     .main-menu-block {
         display: flex;
@@ -297,10 +297,12 @@ body {
         -ms-transition: 0.4s;
         -o-transition: 0.4s;
         transition: 0.4s;
-}
+        z-index: 99;
+    }
+
     .main-menu-block.show-menu {
         margin-right: 0%;
-}
+    }
 
     .hamburger-close {
         display: block;
@@ -391,14 +393,14 @@ body {
         font-size: 7px;
     }
 
-        .hero-content-card-1 {
-            padding: 3rem 4rem 0;
-        }
+    .hero-content-card-1 {
+        padding: 3rem 4rem 0;
+    }
 
-        .hero-content-card-1 h1 {
-            font-size: 5rem;
-            line-height: 5rem;
-        }
+    .hero-content-card-1 h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
 
 }
 

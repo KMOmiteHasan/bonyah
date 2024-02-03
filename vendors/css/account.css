@@ -128,78 +128,160 @@ body {
     fill: #ffffff;
 }
 
-.contact-section {
+.account-section {
     width: 100%;
-    background: transparent;
-    padding: 10.5rem 25vw 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
-.contact-content {
-    width: 84rem;
-    margin: 0 auto;
+.account-content {
+    width: 100%;
+    padding: 0 34vw;
 }
 
-.contact-content h1 {
+.account-content h1 {
     color: #70815E;
-    font-size: 5rem;
+    text-align: center;
+    font-size: 4.5rem;
     font-style: normal;
-    font-weight: 400;
-    line-height: 6.525rem;
-    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 3rem;
 }
 
-.contact-content .contact-form {
-    width: 100%;
+.account-form {
+    width: 32vw;
 }
 
-.contact-content .contact-form #msgForm {
+.account-form .form-block {
     width: 100%;
-    border: 2px solid #70815E;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-    background: transparent;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.account-form input[type="text"],
+.account-form input[type="email"],
+.account-form input[type="password"],
+.account-form input[type="tel"] {
+    width: 100%;
+    background: #FFF;
+    padding: 2.4rem 6.4rem;
+    border: 2px solid transparent;
     outline: none;
-    padding: 3rem 2.4rem;
-    color: rgba(112, 129, 94, 0.90);
-    font-size: 2.6134rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 3.27rem;
-    resize: none;
+    -webkit-border-radius: 48px;
+    -moz-border-radius: 48px;
+    -ms-border-radius: 48px;
+    -o-border-radius: 48px;
+    border-radius: 48px;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-    overflow-y: auto;
+    color: #70815E;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.contact-content .contact-form #msgForm::placeholder {
-    color: rgba(112, 129, 94, 0.90);
-}
-
-.contact-content .contact-form #msgForm:focus {
+.account-form input[type="text"]:focus,
+.account-form input[type="email"]:focus,
+.account-form input[type="password"]:focus,
+.account-form input[type="tel"]:focus {
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid #70815E;
 }
 
-.contact-content .contact-form #contactFormSubmit {
+.account-form input[type="text"]::placeholder,
+.account-form input[type="email"]::placeholder,
+.account-form input[type="password"]::placeholder,
+.account-form input[type="tel"]::placeholder {
+    color: #70815E;
+}
+
+.account-form .form-block-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    left: 3.2rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.account-form .form-block-icon svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    stroke: #70815E;
+}
+
+.account-form .form-block-pass-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    right: 4.2rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.account-form .form-block-pass-icon svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    stroke: #70815E;
+    cursor: pointer;
+}
+
+.account-form .form-block-pass-icon .password-hide {
+    display: none;
+}
+
+.account-form .form-block-pass-icon .password-hide svg {
+    fill: #70815E;
+}
+
+.account-form .form-btn-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.account-form #accountFormSubmit,
+.account-form #accountFormEdit,
+.account-form #accountFormCancel {
+    display: block;
+    width: 45%;
+    text-decoration: none;
+    padding: 2rem 3.8rem;
     color: #FFF;
     text-align: center;
-    font-family: "DM Sans";
     font-size: 2rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
-    margin-top: 2.6rem;
     background: #70815E;
+    -webkit-border-radius: 48px;
+    -moz-border-radius: 48px;
+    -ms-border-radius: 48px;
+    -o-border-radius: 48px;
+    border-radius: 48px;
     border: 0;
     outline: 0;
-    padding: 1.1rem 7rem;
     cursor: pointer;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
@@ -208,13 +290,23 @@ body {
     transition: 0.4s;
 }
 
-.contact-content .contact-form #contactFormSubmit:hover,
-.contact-content .contact-form #contactFormSubmit:focus {
-background: #5f6e4f;
+.account-form #accountFormSubmit:hover,
+.account-form #accountFormSubmit:focus {
+    background: #515e44;
 }
 
+.account-form #accountFormEdit,
+.account-form #accountFormCancel {
+    background: #ffffff;
+    color: #000000;
+}
 
-
+.account-form #accountFormEdit:hover,
+.account-form #accountFormEdit:focus,
+.account-form #accountFormCancel:hover,
+.account-form #accountFormCancel:focus {
+    background: #dddddd;
+}
 
 
 
@@ -225,58 +317,45 @@ background: #5f6e4f;
         margin: 0 3.2vw;
     }
 
-    .contact-section {
-        padding: 5rem 23vw 2rem;
+    .account-content {
+        padding: 0px 30vw;
     }
 
-    .contact-content {
-        width: calc( 100vw - 46vw);
-        margin: 0 auto;
+    .account-form {
+        width: 40vw;
     }
-
-
 }
 
 @media (max-width:1368px) {
+    html {
+        font-size: 9.5px;
+    }
+
     .main-logo {
         left: 5.73vw;
         width: 17.91vw;
     }
 
-    .contact-section {
-        padding: 3rem 20vw 2rem;
+    .account-content {
+        padding: 0px 25vw;
     }
 
-    .contact-content {
-        width: calc(100vw - 40vw);
-    }
-
-    .contact-content h1 {
-        font-size: 3.655vw;
-        line-height: 4.77vw;
-    }
-
-    .contact-content .contact-form #msgForm {
-        height: 32rem;
+    .account-form {
+        width: 50vw;
     }
 }
 
 @media (max-width:990px) {
-    .contact-section {
-        padding: 3rem 10vw 2rem;
+    html {
+        font-size: 9px;
     }
 
-    .contact-content {
-        width: calc(100vw - 20vw);
+    .account-content {
+        padding: 0px 22vw;
     }
 
-    .contact-content h1 {
-        font-size: 5rem;
-        line-height: 6.525rem;
-    }
-
-    .contact-content .contact-form #msgForm {
-        height: 32rem;
+    .account-form {
+        width: 56vw;
     }
 }
 
@@ -374,11 +453,27 @@ background: #5f6e4f;
         height: 4rem;
         fill: #ffffff;
     }
+
+    .account-content {
+        padding: 0px 20vw;
+    }
+
+    .account-form {
+        width: 60vw;
+    }
 }
 
 @media (max-width:668px) {
     html {
         font-size: 7px;
+    }
+
+    .account-content {
+        padding: 0px 18vw;
+    }
+
+    .account-form {
+        width: 64vw;
     }
 
 }
@@ -391,5 +486,23 @@ background: #5f6e4f;
     .main-menu-block {
         width: 65%;
         margin-right: -65%;
+    }
+
+    .account-content {
+        padding: 0px 15vw;
+    }
+
+    .account-form {
+        width: 70vw;
+    }
+}
+
+@media (max-width:420px) {
+
+    .account-form #accountFormSubmit,
+    .account-form #accountFormEdit {
+        width: 47%;
+        padding: 2rem;
+        font-size: 2rem;
     }
 }
